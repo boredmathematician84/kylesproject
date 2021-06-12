@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    <script src="/script.js" defer></script>
+    
+</head>
+<body>
+    <div class="body-container">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <a href="#" onclick="goBack()"><img class="btn-img nav-left" src="/images/back-arrow.svg" alt=""></a>
+            </div>
+            <div class="nav-right">
+                <a href="#"><img class="btn-img" src="/images/plus.svg" alt=""></a>
+                <a href="homepage.html"><img class="btn-img" src="/images/home.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="top">
+                <h1>Start a Class Meeting</h1>
+                <div class="calendar">
+                    <h3 id="time"></h3>
+                    <div class="date-picker">
+                        <h6 class="selected-date"></h6>
+    
+                        <div class="dates">
+                            <div class="month">
+                                <div class="arrows prev-mth"><img src="/images/calendarArrowLeft.svg" alt=""></div>
+                                <h6 class="mth"></h6>
+                                <div class="arrows next-mth"><img src="/images/calendarArrowRight.svg" alt=""></div>
+                            </div>
+                            <div class="weeklyDays">
+                                <div class="weeklyDay">Sun</div>
+                                <div class="weeklyDay">Mon</div>
+                                <div class="weeklyDay">Tue</div>
+                                <div class="weeklyDay">Wed</div>
+                                <div class="weeklyDay">Thu</div>
+                                <div class="weeklyDay">Fri</div>
+                                <div class="weeklyDay">Sat</div>
+                            </div>
+                            <div class="days"></div>
+                        </div>
+                    </div>
+                    <!-- <input type="date" id="date"> -->
+                    <div class="selection-container">
+                        <a href="#" onclick="prevDate()"><div class="date-btn"><img src="/images/leftArrowBlack.svg" alt=""></div></a>
+                        <a href="#" onclick="todaysDate()"><div class="today"><h6>Today</h6></div></a>
+                        <a href="#" onclick="nextDate()"><div class="date-btn"><img src="/images/rightArrowBlack.svg" alt=""></div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rooms" id="rooms">
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>9:00 AM GEOMETRY</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>10:00 AM ALGEBRA I</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>11:00 AM ALGEBRA II</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>12:00 PM ALGEBRA II</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>1:00 PM ALGEBRA II</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>2:00 PM CALCULUS</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>3:00 PM ALGEBRA I</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <a class="btn course room" href="#" onclick="classworkPopup(this)">
+                    <h5>4:00 PM ALGEBRA I</h5>
+                    <img class="btn-img" src="/images/camera.svg" alt="">
+                </a>
+                <div class="popup-container" id="popup-container">
+                    <img id="popup" src="/images/popup.svg" alt="">
+                    <div class="inside-popup">
+                        <h3>Confirm Classwork for this Meeting</h3>
+                        <ul>
+                            <li><input type="checkbox" name="about" id="about" checked><h4>All About Me</h4></li>
+                            <li><input type="checkbox" name="quiz" id="quiz" checked><h4>Polygon Quiz</h4></li>
+                            <li><input type="checkbox" name="ticket" id="ticket" checked><h4>Exit Ticket</h4></li>
+                        </ul>
+                        <a href="#" id="cancel-btn" onclick="cancelActive()"><h5>CANCEL</h5></a>
+                        <a href="#" id="start-btn"><h5>START</h5></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div class="circle circ-lt"></div>
+    <div class="circle circ-rt"></div>
+    <div id="cover"></div>
+<!-- Code injected by live-server -->
+<!-- <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> -->
+</body>
+</html>

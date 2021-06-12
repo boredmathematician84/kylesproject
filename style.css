@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+:root {
+    --Black:  #1A1C1B;
+    --EerieBlack:  #1C2020;
+    --OuterSpace:  #364341;
+    --Ash:  #9CAFAC;
+    --MintCream:  #EAF3F2;
+    --CaribbeanGreen:  #00C6A5;
+    --SpringGreen:  #47FF85;
+    --Capri:  #47C2FF;
+    --Lava:  #C60021;
+    --Mustard:  #FFDB5E;
+}
+
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: var(--EerieBlack);
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 101px; 
+    background: transparent;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75px;
+    background: transparent;
+}
+
+
+h3 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+h4 {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 45px;
+}
+
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: var(--EerieBlack);
+    text-decoration: none;
+    background: transparent;
+}
+
+
+h6 {
+    font-size: 20pt;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    background: transparent;
+}
+
+
+html {
+    display: block;
+}
+
+body {
+    font-size: 16pt;
+    font-weight: normal;
+    overflow: hidden;
+    display: block;
+    /* margin: 8px; */
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    filter: brightness(120%);
+}
+
+
+.body-container {
+    position: absolute;
+    width: 100%; 
+    background: transparent;
+    /* left: 0;
+    top: 0;
+    right: 0; */
+}
+
+.wrapper {
+    display: block;
+    align-items: center;
+    padding: 0px 48px;
+    background: transparent;
+}
+
+.circ-lt {
+    left: -70px;
+    bottom: -49px;
+}
+
+.circle {
+    position: absolute;
+    height: 619px;
+    width: 619px;
+    z-index: -1;
+    border-radius: 100%;
+    background: var(--Black);
+}
+
+.circ-rt {
+    top: -289px;
+    right: -393px;
+}
+
+
+/* Homepage */
+
+.logo {
+    position: relative;
+    top: 169px;
+    width: 655px;
+    height: 240px;
+    background: transparent;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 250px;
+    margin-left: 67%;
+    background: transparent;
+    /* margin-left: 969px; */
+}
+
+
+.btn-img {
+    height: 36px;
+    width: 36px;
+    background: transparent;
+}
+
+a.btn {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    border-radius: 10px;
+    text-decoration: none;
+    background: var(--CaribbeanGreen);
+}
+
+a.btn h5 {
+    padding-top: 8px;
+}
+
+a.btn img {
+    height: 48px;
+    width: 48px;
+    padding-left: 48px;
+    padding-top: 12px;
+    z-index: 2;
+    background: transparent;
+}
+
+/* Manage */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 12px;
+    background: var(--OuterSpace);
+    /* width: 100%; */
+}
+
+.nav-left {
+    background: transparent;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    width: 92px;
+    background: transparent;
+    /* padding-right: 100px; */
+    position: relative;
+}
+
+/* .nav-right  */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Ash);
+    width: 100%;
+    margin-top: 86px;
+    position: relative;
+    margin-bottom: 125px;
+    background: transparent;
+    text-decoration: none;
+}
+
+.top h1 {
+    text-shadow: rgba(156, 175, 172, 0.2) 0px 4px 2px;
+    background: transparent;
+}
+
+.tasks {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left: 283px;
+    background: transparent;
+    width: 100%;
+}
+
+.tasks a {
+    margin: 50px;
+    background: var(--Capri);
+}
+
+.tasks a h5 {
+    padding-top: 28px;
+    padding-bottom: 11px;
+}
+
+.tasks a img {
+    padding-top: 11px;
+    padding-left: 51px;
+}
+
+
+
+
+/* Classes */
+
+a.course {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    border-radius: 10px;
+    text-decoration: none;
+    background: var(--Capri);
+}
+
+
+.top .calendar {
+    text-align: center;
+    width: 224px;
+    position: relative;
+    right: 200px;
+    margin-top: 19px;
+    background: transparent;
+}
+
+.top #time {
+    color: var(--MintCream);
+    width: 223px;
+    height: 61px;
+    margin-top: -69px;
+    background: transparent;
+}
+
+.top .selection-container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    background: transparent;
+    height: 35px;
+}
+
+
+.top .date-btn {
+    width: 34px;
+    height: 34px;
+    filter: drop-shadow(rgb(52, 62, 60) 0px 4px 4px);
+    border-radius: 5px;
+    margin: 0.5px;
+    background: var(--Ash);
+}
+
+.top .date-btn img {
+    background: transparent;
+    padding: 9px 8px 8px 9px;
+}
+
+.top .today {
+    width: 153px;
+    height: 34px;
+    filter: drop-shadow(rgb(52, 62, 60) 0px 4px 4px);
+    z-index: 2;
+    border-radius: 5px;
+    margin: 0.5px;
+    color: var(--EerieBlack);
+    background: var(--Ash);
+    margin-top: -32px;
+    
+}
+
+.top .today h6 {
+    background: transparent;
+    padding: 4.5px 0px;
+}
+
+
+
+.date-picker {
+    position: relative;
+    width: 100%;
+    max-width: 224px;
+    height: 28px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 5;
+    background: transparent;
+}
+
+.date-picker .selected-date {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Ash);
+    background: transparent;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.date-picker .dates {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -23.5px;
+    right: 0px;
+    width: 270px;
+    margin-top: 3px;
+}
+
+.date-picker .dates.active {
+    display: block;
+    border-radius: 10px;
+    background: var(--OuterSpace);
+}
+
+.date-picker .dates .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--MintCream);
+    width: 100%;
+    height: 30px;
+    background: transparent;
+}
+
+.date-picker .dates .month .arrows {
+    display: flex;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    padding: 0px 10px;
+}
+
+.date-picker .dates .month .arrows img {
+    background: transparent;
+}
+
+.date-picker .dates .month .mth {
+    background: transparent;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.date-picker .dates .weeklyDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.date-picker .dates .weeklyDay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--MintCream);
+    font-size: 16px;
+    line-height: 20px;
+    background: transparent;
+
+}
+
+.date-picker .dates .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 132px;
+    background: transparent;
+}
+
+.date-picker .dates .days .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--MintCream);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    background: transparent;
+}
+
+.date-picker .dates .days .day.selected {
+    background-image: url(/images/calendarCircle.svg);
+    color: var(--OuterSpace);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+#rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-auto-rows: 250px;
+    margin: 0px calc((90% - 900px) / 2);
+    background: transparent;
+}
+
+#popup-container {
+    position: absolute;
+    z-index: 5000;
+    visibility: hidden;
+    background: transparent;
+}
+
+#popup-container img {
+    background: transparent;
+}
+
+#popup-container .inside-popup {
+    position: absolute;
+    top: 28px;
+    left: 50px;
+    z-index: 9;
+}
+
+.inside-popup h3 {
+    color: var(--MintCream);
+}
+
+.inside-popup ul {
+    display: inline-block;
+    left: 119px;
+    position: absolute;
+}
+
+.inside-popup ul li {
+    list-style-type: none;
+    display: flex;
+    margin-top: 36px;
+}
+
+.inside-popup ul li input {
+    height: 36px;
+    width: 36px;
+    margin-top: 5px;
+    margin-right: 14px;
+    appearance: none;
+    background: url(/images/checkboxempty.svg);
+    background-repeat: no-repeat;
+}
+
+.inside-popup ul li input:checked {
+    background: url(/images/checkboxchecked.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+.inside-popup ul h4 {
+    color: var(--MintCream);
+}
+
+.inside-popup #cancel-btn {
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    top: 397px;
+    left: 380px;
+    border-radius: 10px;
+    background: var(--Ash);
+}
+
+.inside-popup #cancel-btn h5 {
+    width: 136px;
+    height: 28px;
+    padding: 15px 12px 17px;
+    background: transparent;
+}
+
+.inside-popup #start-btn {
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    top: 397px;
+    left: 580px;
+    border-radius: 10px;
+    background: var(--CaribbeanGreen);
+}
+
+.inside-popup #start-btn h5 {
+    width: 136px;
+    height: 28px;
+    padding: 15px 12px 17px;
+}
+
+#cover {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* Assign */
+
+.instructions {
+    color: var(--MintCream);
+    background: transparent;
+    margin-left: 150px;
+    margin-top: -65px;
+    margin-bottom: 60px;
+}
+
+#assign {
+    background: transparent;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#assign-btn {
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    top: 797px;
+    left: 993px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+#assign-btn h5 {
+    width: 136px;
+    height: 28px;
+    padding: 15px 12px 17px;
+}
+
+/* Classwork */
+
+#details {
+    display: block;
+    background: transparent;
+    margin: 0 193px;
+}
+
+
+.details h4 {
+    color: var(--MintCream);
+    position: absolute;
+    top: 286px;
+    margin-bottom: 60px;
+    background: transparent;
+}
+
+/* .details #assignmentName {
+    color: var(--MintCream);
+    position: absolute;
+    top: 286px;
+    margin-bottom: 60px;
+    background: transparent;
+} */
+
+.title-container {
+    background: transparent;
+    height: 64px;
+}
+
+.details h6 {
+    color: var(--MintCream);
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: normal;
+    height: 32px;
+    background: transparent;
+    margin-bottom: 0;
+    margin-top: 36px;
+}
+
+.details .title-container input {
+    width: 100%;
+    height: 32px;
+    color: var(--MintCream);
+    padding-left: 6px;
+    border-radius: 10px;
+    background: var(--OuterSpace);
+    box-sizing: border-box;
+    border: 1px solid var(--Ash);
+    color: var(--MintCream);
+    
+}
+
+.details .title-container input::placeholder {
+    color: var(--MintCream);
+}
+
+.directions-container, .meeting-date-container, .course-selection-container, .student-selection-container, .directions, .bottom {
+    background: transparent;
+}
+
+.details .directions-container textarea {
+    background: var(--OuterSpace);
+    box-sizing: border-box;
+    border: 1px solid var(--Ash);
+    width: 100%;
+    height: 150px;
+    color: var(--MintCream);
+    padding-left: 6px;
+    padding-top: 6px;
+    border-radius: 10px;
+    color: var(--MintCream);
+}
+
+.details .directions-container textarea::placeholder {
+    color: var(--MintCream);
+}
+
+.details .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meeting-date-container .date-picker .selected-date {
+    box-sizing: border-box;
+    width: 270px;
+    height: 32px;
+    justify-content: left;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--MintCream);
+    background-image: url(/images/calendarGreen.svg);
+    background-position-x: 238px;
+    background-position-y: 8px;
+    background-size: 16px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: var(--OuterSpace);
+}
+
+.meeting-date-container .date-picker .dates .month .mth {
+    margin-top: 5px;
+}
+
+
+
+.meeting-date-container .date-picker .dates {
+    left: 0px;
+    top: -3px;
+}
+
+
+
+
+
+
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}

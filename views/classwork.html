@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="body-container">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <a href="#" onclick="goBack()"><img class="btn-img" src="/images/back-arrow.svg" alt=""></a>
+            </div>
+            <div class="nav-right">
+                <a href="#" hidden><img class="btn-img" src="/images/plus.svg" alt=""></a>
+                <a href="homepage.html"><img class="btn-img" src="/images/home.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="top">
+                <h1>Classwork Details</h1>  
+                              
+            </div>
+            
+
+            <div class="details" id="details">
+                <h4>Complete the details to assign All About Me.<div id="assignmentName"></div></h4>
+                <div class="title-container">
+                    <h6 class="title">title</h6>
+                    <input type="text" name="title-text" id="title-text" placeholder="Enter text here">
+                </div>              
+                <div class="directions-container">
+                    <h6 class="directions">directions</h6>
+                    <textarea type="text" name="directions-text" id="directions-text" placeholder="Enter text here"></textarea>
+                </div>
+                <div class="bottom">
+                    <div class="meeting-date-container">
+                        <h6 class="meeting-date">meeting date</h6>
+                        <div class="date-picker">
+                            <h6 class="selected-date"></h6>
+                            
+                            <div class="dates">
+                                <div class="month">
+                                    <div class="arrows prev-mth"><img src="/images/calendarArrowLeft.svg" alt=""></div>
+                                    <h6 class="mth"></h6>
+                                    <div class="arrows next-mth"><img src="/images/calendarArrowRight.svg" alt=""></div>
+                                </div>
+                                <div class="weeklyDays">
+                                    <div class="weeklyDay">Sun</div>
+                                    <div class="weeklyDay">Mon</div>
+                                    <div class="weeklyDay">Tue</div>
+                                    <div class="weeklyDay">Wed</div>
+                                    <div class="weeklyDay">Thu</div>
+                                    <div class="weeklyDay">Fri</div>
+                                    <div class="weeklyDay">Sat</div>
+                                </div>
+                                <div class="days"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-selection-container">
+                        <h6 class="course-selection">course</h6>
+                        <select name="course-choice" id="course-choice" multiple>
+                            <option value="default" disabled selected>Select Course</option>
+                            <option value="course1">9 am - Geometry</option>
+                        </select>
+                    </div>
+                    <div class="student-selection-container">
+                        <h6 class="student-selection">students</h6>
+                        <select name="student-choice" id="student-choice" multiple>
+                            <option value="default" disabled selected>Select Students</option>
+                            <option value="allStudents">All Students</option>
+                            <option value="student1">Chip Philbin</option>
+                        </select>
+                    </div>
+                    <a href="#" id="assign-btn"><h5>ASSIGN</h5></a>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+    <div class="circle circ-lt"></div>
+    <div class="circle circ-rt"></div>
+<!-- Code injected by live-server -->
+<!-- <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> -->
+</body>
+</html>

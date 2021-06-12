@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="body-container">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <a href="#" onclick="goBack()"><img class="btn-img" src="/images/back-arrow.svg" alt=""></a>
+            </div>
+            <div class="nav-right">
+                <a href="#" hidden><img class="btn-img" src="/images/plus.svg" alt=""></a>
+                <a href="homepage.html"><img class="btn-img" src="/images/home.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="top">
+                <h1>Manage Classwork</h1>       
+                      
+            </div>
+
+            <div class="tasks" id="tasks">
+                <a class="btn course" href="#">
+                    <h5>CREATE</h5>
+                    <img class="btn-img" src="/images/file-plus.svg" alt="">
+                </a>
+                <a class="btn course" href="#">
+                    <h5>EDIT</h5>
+                    <img class="btn-img" src="/images/note-pencil.svg" alt="">
+                </a> 
+                <a class="btn course" href="assign.html" >
+                    <h5>ASSIGN</h5>
+                    <img class="btn-img" src="/images/file-uparrow.svg" alt="">
+                </a>
+                
+                
+                <a class="btn course" href="#">
+                    <h5>SCHEDULE</h5>
+                    <img class="btn-img" src="/images/calendar.svg" alt="">
+                </a>
+               
+            </div>
+        </div>
+
+       
+
+    </div>
+    <div class="circle circ-lt"></div>
+    <div class="circle circ-rt"></div>
+<!-- Code injected by live-server -->
+<!-- <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> -->
+</body>
+</html>
