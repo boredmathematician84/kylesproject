@@ -435,7 +435,7 @@ a.course {
 }
 
 .date-picker .dates .days .day.selected {
-    background-image: url(/images/calendarCircle.svg);
+    background-image: url(images/calendarCircle.svg);
     color: var(--OuterSpace);
     background-repeat: no-repeat;
     background-position: center;
@@ -493,12 +493,12 @@ a.course {
     margin-top: 5px;
     margin-right: 14px;
     appearance: none;
-    background: url(/images/checkboxempty.svg);
+    background: url(images/checkboxempty.svg);
     background-repeat: no-repeat;
 }
 
 .inside-popup ul li input:checked {
-    background: url(/images/checkboxchecked.svg);
+    background: url(images/checkboxchecked.svg);
     background-repeat: no-repeat;
 }
 
@@ -679,7 +679,7 @@ a.course {
     font-size: 16px;
     line-height: 20px;
     color: var(--MintCream);
-    background-image: url(/images/calendarGreen.svg);
+    background-image: url(images/calendarGreen.svg);
     background-position-x: 238px;
     background-position-y: 8px;
     background-size: 16px;
